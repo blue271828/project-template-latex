@@ -1,6 +1,6 @@
 # See here for image contents:
-# https://github.com/overleaf/overleaf/blob/main/server-ce/Dockerfile
-FROM sharelatex/sharelatex-base:latest
+# https://hub.docker.com/repository/docker/blue271828/sharelatex-full
+FROM blue271828/sharelatex-full
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
@@ -11,4 +11,3 @@ RUN bash -c "$(curl -fsSL "https://raw.githubusercontent.com/microsoft/vscode-de
 # ** [Optional] Uncomment this section to install additional packages. **
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
-

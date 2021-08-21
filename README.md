@@ -40,3 +40,12 @@ Transcript written on main.log.
 
 
 
+## How to update a sharelatex container image?
+
+The container used in the template is a fully installed sharelatex container ( [blue271828/sharelatex-full](https://hub.docker.com/repository/docker/blue271828/sharelatex-full) ). This is based on the official image, but it is customized. If you want to update this image, you need to build it locally and push it.
+
+```bash
+$ docker build -t blue271828/sharelatex-full
+$ docker push blue271828/sharelatex-full
+```
+
