@@ -1,6 +1,6 @@
 # See here for image contents:
 # https://hub.docker.com/repository/docker/blue271828/sharelatex-full
-FROM blue271828/sharelatex-full
+FROM blue271828/sharelatex-full@sha256:d2e6c678b31fbbde8343f35d7b193edaa407063216dca9fc7c01bc127b195caf
 
 ARG USERNAME=vscode
 ARG USER_UID=1000
